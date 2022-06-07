@@ -6,11 +6,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "firebase": "^9.8.2",
+    "json2csv": "^5.0.7",
+    "moment": "^2.29.3",
     "next": "latest",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-hook-form": "^7.31.3",
+    "react-icons": "^4.4.0",
+    "react-spring": "^9.4.5",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "tw-elements": "^1.0.0-alpha12"
   },
   "devDependencies": {
+    "@types/json2csv": "^5.0.3",
     "@types/node": "17.0.35",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
