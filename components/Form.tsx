@@ -30,6 +30,7 @@ function Form() {
     const [csv, setCsv] = useState<string>("")
 
 
+
     // Submiting data
     const { register, handleSubmit, formState: { errors } } = useForm<IFormInput>();
     const onSubmit: SubmitHandler<IFormInput> = async data => {
@@ -57,7 +58,7 @@ function Form() {
     // Socket handling
     useEffect((): any => {
         // connect to socket server
-        const socket = socketio('http://localhost:3000', {
+        const socket = socketio(process.env.NEXT_PUBLIC_HOST || "http://localhost:3000", {
             path: '/api/socketio'
         })
 
