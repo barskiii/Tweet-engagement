@@ -63,12 +63,10 @@ function Form() {
         })
 
         socket.on("connect", () => {
-            console.log("SOCKET CONNECTED!", socket.id);
             setSocketID(socket.id)
         });
 
         socket.on("lookup", lookup => {
-            console.log("LOOKUP", lookup);
             if (lookup === "good") {
                 setRecivingDiv(true)
                 setLikes({ status: 'loading' })

@@ -1,5 +1,13 @@
 {
   "private": true,
+  "author": {
+    "name": "Juan Pablo Varela",
+    "email": "andrijaj.h@gmail.com",
+    "url": "https://github.com/barskiii"
+  },
+  "license": "MIT",
+  "name": "tweet-interactions",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

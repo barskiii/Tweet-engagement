@@ -129,10 +129,6 @@ export const parseToCsv = async (likes: Twitter[], retweets: Twitter[], quotes: 
     const RETWEETS = retweets.map(retweet => retweet.username)
     const QUOTES = quotes.map(quote => quote.username)
 
-    console.log("LIKES LIKES LIKES LIKES",LIKES)
-    console.log("RETWEETS RETWEETS RETWEETS RETWEETS",RETWEETS)
-    console.log("QUOTES QUOTES QUOTES QUOTES",QUOTES)
-
     while (LIKES.length >= cnt || RETWEETS.length >= cnt || QUOTES.length >= cnt) {
         data.push({ liked_by_user: LIKES[cnt] || '', retweeted_by_user: RETWEETS[cnt] || '', quoted_by_user: QUOTES[cnt] || '' })
         cnt++
